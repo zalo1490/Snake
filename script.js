@@ -153,3 +153,9 @@ const startGame = () => {
 }
 
 startButton.addEventListener('click', startGame);
+
+// Agregar eventos para los botones de dirección
+document.getElementById('up').addEventListener('click', () => setDirection('ArrowUp'));
+document.getElementById('down').addEventListener('click', () => setDirection('ArrowDown'));
+document.getElementById('left').addEventListener('click', () => setDirection('ArrowLeft'));
+document.getElementById('right').addEventListener('click', () => setDirection('ArrowRight'));
